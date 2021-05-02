@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Audio Graph System </title>
+    <link rel="icon" href="./Utils/music-notes.svg">
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1> Audio Graph System </h1>
+    <div class="static_tag" id="introduction">Introduction</div>
+    <div class="static_tag" id="one-six">one_six</div>
+    <div class="static_tag" id="polite">Poilte</div>
+    <div class="static_tag" id="empathy">Rapport Building - Empathy</div>
+    <div class="static_tag" id="energy">Rapport Building - Energy</div>
+    <div>
+        <div id="canvas-container"></div>
+        <div class="button-container">
+            <div class="sound-buttons">
+                <button class="sides" id="sound">
+                    <img src="./Utils/sound.png" alt="sound">
+                </button>
+                <button class="sides" id="mute">
+                    <img src="./Utils/mute.png" alt="mute">
+                </button>
+                <div class="container">
+                    <div class="left"></div>
+                    <div class="knob" id="knob"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+
+            <button id="play">
+                <img src="./Utils/play.png" alt="play">
+            </button>
+            <button id="pause">
+                <img src="./Utils/pause.png" alt="pause">
+            </button>
+            <div id="forward-btn">
+                <button class="sides" id="fast-forward">
+                    <img src="./Utils/fast-forward.png" alt="fast-forward">
+                </button>
+            </div>
+        </div>
+    </div>
+    <audio id="audio">
+        <source src="sample2.mp3" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

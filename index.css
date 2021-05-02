@@ -1,0 +1,153 @@
+body {
+  text-align: center;
+}
+
+#canvas-container {
+  max-width: 800px;
+  margin: 108px auto;
+}
+
+.sound-buttons {
+  border: 1px solid;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  display: flex;
+  border: 1px solid blue;
+}
+
+.sound-buttons:hover .container {
+  display: flex;
+}
+
+#fast-forward img,
+#sound img,
+#mute img {
+  width: 20px;
+}
+
+#forward-btn {
+  opacity: 0.7;
+  padding: 15px 20px 10px 20px;
+  border: 1px solid blue;
+  border-radius: 30px;
+  margin-top: 17px;
+}
+
+#fast-forward {
+  cursor: not-allowed;
+  border: none;
+  background-color: transparent;
+}
+
+#sound,
+#mute {
+  background: none;
+  border: none;
+}
+
+.button-container {
+  width: 295px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+.canvas-element {
+  background-color: rgb(230, 230, 230);
+  float: left;
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 0px 1.5px 0px;
+  padding: 0;
+}
+
+.canvas-element:hover {
+  transform: scale(2, 1);
+}
+
+.button-container img {
+  width: 35px;
+}
+
+#play,
+#pause {
+  padding: 5px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid blue;
+  border-radius: 40px;
+}
+
+@keyframes background {
+  from {
+    background-color: rgb(230, 230, 230);
+  }
+  to {
+    background-color: pink;
+  }
+}
+
+.static_tag {
+  position: absolute;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#energy {
+  background-color: #488f19;
+  right: 0;
+  margin: -15px 340px 0 0;
+}
+
+#empathy {
+  background-color: #6d3c28;
+  right: 0;
+  margin: 20px 355px 0 0;
+}
+
+#polite {
+  background-color: blue;
+  right: 0;
+  margin: 60px 355px 0 0;
+}
+
+#one-six {
+  background-color: #18da9c;
+  margin: 20px 0 0 530px;
+}
+
+#introduction {
+  background-color: #18df22;
+  margin: 50px 0 0 355px;
+}
+
+.container {
+  align-items: center;
+  display: none;
+  height: 1.5rem;
+  width: 6rem;
+}
+
+.left {
+  height: 2px;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.knob {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
