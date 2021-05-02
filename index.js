@@ -107,10 +107,14 @@ const play = () => {
     // if audio reached the last bar of the total bars(100) then pause and display play button
     if (cnt === totalBar - 1) {
       pause();
+      for (let i = 0; i < totalBar; i++) {
+        const bar = document.getElementById(i);
+        bar.style.backgroundColor = "rgb(230, 230, 230)";
+      }
       flag = false;
       pauseButton.style.display = "none";
       playButton.style.display = "inline";
-      clearInterval(interval);
+      cnt = -1;
     }
     cnt++;
   }, 500);
